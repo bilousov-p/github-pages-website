@@ -1,8 +1,4 @@
-on:
-  push:
-    paths:
-      - '**.sh'
-      - '**.bash'
+on: push
 
 name: "Main workflow"
 permissions: {}
