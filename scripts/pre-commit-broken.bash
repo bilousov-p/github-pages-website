@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This is a pre-commit file that will not allow the commit if "make" command failed
+# This is a pre-commit file that will not allow the commit if "make" command failed.
 make > /dev/null
 make_result=$?
 
