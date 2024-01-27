@@ -1,6 +1,5 @@
 #!/bin/sh -l
 
-add-apt-repository universe
-apt install python3-proselint
-
+pip3 install proselint
+pip install proselint
 find . -type f -name "*.md" -exec proselint '{}' \;
