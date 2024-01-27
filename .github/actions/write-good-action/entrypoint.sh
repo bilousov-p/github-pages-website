@@ -1,4 +1,3 @@
 #!/bin/sh -l
 
-echo $(pwd)
-echo $(ls)
+find . -type f -name "*.md" -exec proselint '{}' \;
