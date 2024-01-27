@@ -1,9 +1,9 @@
 # action.yml
 name: 'Check grammar'
 description: 'Checks all .md files for typos/grammar errors'
-steps:
-- uses: actions/checkout@v4
-- uses: actions/setup-python@v1
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  steps:
+  - uses: actions/checkout@v4
+  - uses: actions/setup-python@v5
