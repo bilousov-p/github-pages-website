@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-pip install proselint
+pip3 install proselint
 find . -type f -name "*.md" -exec proselint '{}' \;
