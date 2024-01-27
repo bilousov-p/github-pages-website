@@ -4,6 +4,3 @@ description: 'Checks all .md files for typos/grammar errors'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  steps:
-  - uses: actions/checkout@v4
-  - uses: actions/setup-python@v5
