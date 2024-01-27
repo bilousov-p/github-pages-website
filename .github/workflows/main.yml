@@ -13,10 +13,6 @@ jobs:
       - name: Hello world action step
         id: hello
         uses: ./.github/actions/write-good-action
-        with:
-          who-to-greet: 'Mona the Octocat'
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
   shellcheck:
     name: Shellcheck
     runs-on: ubuntu-latest
