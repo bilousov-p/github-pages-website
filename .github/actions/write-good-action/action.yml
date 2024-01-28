@@ -9,5 +9,5 @@ runs:
         - name: Echo
           shell: bash
           run: |
-            pip --version
+            pip install proselint
             find . -type f -name "*.md" -exec proselint '{}' \
