@@ -10,11 +10,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Install python  
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-      - run: pip install proselint
       - name: Write good action step 
         uses: ./.github/actions/write-good-action
   shellcheck:

@@ -10,3 +10,4 @@ runs:
           shell: bash
           run: |
             pip --version
+            find . -type f -name "*.md" -exec proselint '{}' \
