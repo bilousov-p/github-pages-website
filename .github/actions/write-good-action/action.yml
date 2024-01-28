@@ -11,4 +11,4 @@ runs:
           run: |
             pip install proselint
             find . -type f -name "*.md" -exec proselint '{}' \; | tee errors.txt
-            [ ! -s ./errors.txt ] && exit 1
+            [ -s ./errors.txt ] && exit 1
