@@ -10,4 +10,4 @@ runs:
           shell: bash
           run: |
             pip install proselint
-            find . -type f -name "*.md" -exec proselint '{}' \
+            find . -type f -name "*.md" -exec proselint '{}' \;
