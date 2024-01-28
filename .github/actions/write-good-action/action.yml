@@ -2,5 +2,10 @@
 name: 'Check grammar'
 description: 'Checks all .md files for typos/grammar errors'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+    using: 'composite'
+    steps:
+        - name: Setup Python
+          uses: actions/setup-python@v5.0.0
+        - name: Echo
+          run: |
+            pip --version
