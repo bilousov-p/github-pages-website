@@ -1,0 +1,12 @@
+on:
+  pull_request:
+    types: [opened, reopened]
+jobs:
+  write-good:
+    runs-on: ubuntu-latest
+    name: Check .md files grammar
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Write good action step
+        uses: ./.github/actions/write-good-action

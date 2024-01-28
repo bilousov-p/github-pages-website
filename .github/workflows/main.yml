@@ -4,15 +4,7 @@ name: "Main workflow"
 permissions: {}
 
 jobs:
-  hello_world_job:
-    runs-on: ubuntu-latest
-    name: Check .md files grammar
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Write good action step 
-        uses: ./.github/actions/write-good-action
-  shellcheck:
+ shellcheck:
     name: Shellcheck
     runs-on: ubuntu-latest
     steps:
